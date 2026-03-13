@@ -75,9 +75,16 @@ a:hover {
 
 /* NAP Info Bar */
 .nap-bar {
-  background: var(--bg-darker);
-  padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(74, 124, 140, 0.2);
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nap-bar {
+    display: block;
+    background: var(--bg-darker);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(74, 124, 140, 0.2);
+  }
 }
 
 .nap-bar .container {
@@ -160,6 +167,17 @@ nav ul {
   visibility: visible;
   opacity: 1;
   background: transparent;
+}
+
+/* Hide Book Now button in nav on desktop */
+nav ul li:last-child {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav ul li:last-child {
+    display: block;
+  }
 }
 
 nav a {
