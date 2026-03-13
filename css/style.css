@@ -936,10 +936,15 @@ footer {
     gap: 2rem;
     transform: translateX(100%);
     transition: var(--transition-smooth);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
   }
   
   nav ul.active {
     transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
   }
   
   nav a {
