@@ -169,17 +169,6 @@ nav ul {
   background: transparent;
 }
 
-/* Hide Book Now button in nav on desktop */
-nav ul li:last-child {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  nav ul li:last-child {
-    display: block;
-  }
-}
-
 nav a {
   color: var(--text-white);
   font-weight: 500;
