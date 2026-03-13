@@ -157,6 +157,11 @@ nav ul {
   list-style: none;
   gap: 2rem;
   align-items: center;
+  position: static;
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+  background: transparent;
 }
 
 nav a {
